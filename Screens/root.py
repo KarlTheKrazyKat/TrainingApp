@@ -2,6 +2,8 @@ from tkinter import *
 from tkinter import ttk
 import sys
 
+cfp="Win"
+
 root = Tk()
 root.title('New VIS Project')
 
