@@ -42,3 +42,10 @@ class Plan():
 
 test = Plan()
 
+#can edit rest.cfg
+#create json file under unique plan id
+
+#cannnot generate plan
+#create unique calendar
+#log existing workouts
+#auto recommend workouts
