@@ -20,12 +20,14 @@ root.minsize(1080,720)
 #root.iconbitmap("L:/WOM/PYWOM/Images/Icons/<some_icon>")
 
 #Screen Elements
+from Screens.Launch.f_main import *
 
 #Screen Grid
 root.grid_columnconfigure(0,weight=1)
 root.grid_rowconfigure(0,weight=1)
 
 #Screen Modules
+from modules.Launch.m_main import *
 
 #Handle Arguments
 
