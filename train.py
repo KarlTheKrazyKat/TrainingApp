@@ -9,7 +9,7 @@ class Plan():
     def __init__(self,plan_id=None):
         if plan_id == None:
             self.rest_info = {}
-            with open('C:/Users/elija/OneDrive/Desktop/Training App/rest.cfg','r') as f:
+            with open('C:/Users/elija/OneDrive/Desktop/TrainingApp/rest.cfg','r') as f:
                 for line in f:
                     elements = line.strip("\n").split(" ")
                     self.rest_info[elements[0]] = {}
@@ -27,12 +27,12 @@ class Plan():
                 for i in range(0,6,1):
                     plan_id = plan_id + '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'[random.randint(0,35)]
 
-                if not os.path.exists('C:/Users/elija/OneDrive/Desktop/Training App/'+plan_id):
+                if not os.path.exists('C:/Users/elija/OneDrive/Desktop/TrainingApp/'+plan_id):
                     break
 
             self.id=plan_id.upper()
-            os.mkdir('C:/Users/elija/OneDrive/Desktop/Training App/Plans/'+plan_id)
-            with open('C:/Users/elija/OneDrive/Desktop/Training App/Plans/'+plan_id+'/rest_info.json', 'w') as f:
+            os.mkdir('C:/Users/elija/OneDrive/Desktop/TrainingApp/Plans/'+plan_id)
+            with open('C:/Users/elija/OneDrive/Desktop/TrainingApp/Plans/'+plan_id+'/rest_info.json', 'w') as f:
                 json.dump(self.rest_info, f, indent = 4)
 
         else:

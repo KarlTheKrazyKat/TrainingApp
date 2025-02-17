@@ -1,0 +1,91 @@
+{
+    "muscles":{
+        "trap": {
+            "Is Trained": true,
+            "Current rest period": "2",
+            "Days till ready": "0"
+        },
+        "shoulder": {
+            "Is Trained": true,
+            "Current rest period": "3",
+            "Days till ready": "0"
+        },
+        "lats": {
+            "Is Trained": true,
+            "Current rest period": "3",
+            "Days till ready": "0"
+        },
+        "tricep": {
+            "Is Trained": true,
+            "Current rest period": "2",
+            "Days till ready": "0"
+        },
+        "bicep": {
+            "Is Trained": true,
+            "Current rest period": "2",
+            "Days till ready": "0"
+        },
+        "chest": {
+            "Is Trained": true,
+            "Current rest period": "3",
+            "Days till ready": "0"
+        },
+        "mid_back": {
+            "Is Trained": true,
+            "Current rest period": "3",
+            "Days till ready": "0"
+        },
+        "core": {
+            "Is Trained": true,
+            "Current rest period": "2",
+            "Days till ready": "0"
+        },
+        "low_back": {
+            "Is Trained": true,
+            "Current rest period": "2",
+            "Days till ready": "0"
+        },
+        "glutes": {
+            "Is Trained": true,
+            "Current rest period": "3",
+            "Days till ready": "0"
+        },
+        "adductor": {
+            "Is Trained": true,
+            "Current rest period": "0",
+            "Days till ready": "0"
+        },
+        "abductor": {
+            "Is Trained": true,
+            "Current rest period": "0",
+            "Days till ready": "0"
+        },
+        "hamstring": {
+            "Is Trained": true,
+            "Current rest period": "4",
+            "Days till ready": "0"
+        },
+        "quadracep": {
+            "Is Trained": true,
+            "Current rest period": "3",
+            "Days till ready": "0"
+        },
+        "calves": {
+            "Is Trained": true,
+            "Current rest period": "0",
+            "Days till ready": "0"
+        }
+    },
+    "interactions":{
+        "inter1":{
+            "muscles":[
+                "bicep",
+                "chest"
+            ],
+            "type":"prefer",
+            "type":"ask",
+            "type":
+            }
+        }
+    }
+}
