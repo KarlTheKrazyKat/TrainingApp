@@ -1,0 +1,5 @@
+"require" tell the interpreter that 
+dict[inter]["muscles"][0] requires dict[inter]["muscles"][1] to be at least "days" rested
+
+"resolve" tells the interpreter that
+when dict[inter]["muscles][0] and dict[inter]["muscles"][1] are both Ready, to assign [0]

@@ -15,7 +15,7 @@ hs = root.winfo_screenheight()
 x = (ws/2) - (w/2)
 y = (hs/2) - (h/2)
 root.geometry('%dx%d+%d+%d' % (w, h, x, y))
-root.title("Placeholder Title")
+root.title("TrainingApp")
 root.minsize(1080,720)
 #root.iconbitmap("L:/WOM/PYWOM/Images/Icons/<some_icon>")
 

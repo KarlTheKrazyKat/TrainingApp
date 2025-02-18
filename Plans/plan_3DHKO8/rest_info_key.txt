@@ -7,5 +7,6 @@ Definitions of all variables in the rest_info.json file
 
 "interactions" = holds all the interactions for the plan
     "inter[i]" = holds the number of the interaction
-        "muscles" = holds the two muscle groups both must match a MUSCLENAME from above
+        "muscles" = holds a list of the MUSCLENAMEs of involved muscles
+        "type" = tells program what type of interaction this is
         "days" = holds 

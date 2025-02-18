@@ -1,36 +1,48 @@
+#Default Imports
+from tkinter import *
+from tkinter import ttk
+from Screens.root import *
 import sys
-import datetime
+#File Specific Imports
 
-part = sys.argv[1]
-rc = sys.argv[2]
-time = sys.argv[3]
+#Configure Screen
+print(cfp)
 
+w = 1080
+h = 720
+ws = root.winfo_screenwidth()
+hs = root.winfo_screenheight()
+x = (ws/2) - (w/2)
+y = (hs/2) - (h/2)
+root.geometry('%dx%d+%d+%d' % (w, h, x, y))
+root.title("Configure Plan")
+root.minsize(1080,720)
+#root.iconbitmap("L:/WOM/PYWOM/Images/Icons/<some_icon>")
 
-filething=""
-with open('C:/Users/elija/OneDrive/Desktop/Training App/rest.cfg','r') as f:
-    filething=f.readlines()
-    for line in range(0,len(filething)):
-        vals = filething[line].split()
-        if vals[0] == part:
-            if rc == "rest":
-                filething[line] = vals[0]+" "+time+" "+vals[2]+"\n"
-                break
-            elif rc == "current":
-                filething[line] = vals[0]+" "+vals[1]+" "+time
-                break
-            else:
-                print("Invalid command "+rc)
-                break
-    if filething == f.readlines():
-        print("No value changed. Check spelling.")
+#Screen Elements
+from Screens.Config.f_controls import *
+from Screens.Config.f_muscles import *
+from Screens.Config.f_selector import *
 
+#Screen Grid
+root.grid_columnconfigure(0,weight=1)
+root.grid_columnconfigure(1,weight=1)
+root.grid_rowconfigure(0,weight=1)
+root.grid_rowconfigure(1,weight=5)
 
-with open('C:/Users/elija/OneDrive/Desktop/Training App/rest.cfg','w') as f:
-    writefile = ""
-    for i in filething:
-        writefile = writefile + i
-    f.write(writefile)
-    print("Updated rest.cfg")
-with open('C:/Users/elija/OneDrive/Desktop/Training App/event_log.txt','a') as f:
-    now = datetime.datetime.now()
-    f.write(now.strftime("%Y-%m-%d %H:%M:%S")+" set "+part+" "+rc+"\n")
+#Screen Modules
+from modules.Config.m_controls import *
+from modules.Config.m_muscles import *
+from modules.Config.m_selector import *
+
+#Handle Arguments
+
+#Define Loop Modules
+def loop():
+    #screen modules run here
+    1+1
+
+#Update Loop
+while root.winfo_exists:
+    loop()
+    root.update()
