@@ -9,4 +9,4 @@ Definitions of all variables in the rest_info.json file
     "inter[i]" = holds the number of the interaction
         "muscles" = holds a list of the MUSCLENAMEs of involved muscles
         "type" = tells program what type of interaction this is
-        "days" = holds 
+        "days" = holds the number of days between the two muscles being defined as interacting
