@@ -1,0 +1,11 @@
+Definitions of all variables in the rest_info.json file
+
+"muscles" = holds a dictionary of all muscle groups added by the user
+    "MUSCLENAME" = holds the user entered muscle group name    
+        "Current rest period" = The amount of days of rest needed between an exercise and itself
+        "Days till ready" = This variable counts up from 1 and will be reset when the muscle group is trained
+
+"interactions" = holds all the interactions for the plan
+    "inter[i]" = holds the number of the interaction
+        "muscles" = holds the two muscle groups both must match a MUSCLENAME from above
+        "days" = holds 

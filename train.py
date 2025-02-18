@@ -14,7 +14,6 @@ class Plan():
                     elements = line.strip("\n").split(" ")
                     self.rest_info[elements[0]] = {}
                     try:
-                        self.rest_info[elements[0]]["Is Trained"] = True
                         self.rest_info[elements[0]]["Current rest period"] = elements[1]
                         self.rest_info[elements[0]]["Days till ready"] = elements[2]
                     except:

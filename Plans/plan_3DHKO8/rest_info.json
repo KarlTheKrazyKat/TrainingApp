@@ -1,32 +1,26 @@
 {
     "muscles":{
         "trap": {
-            "Is Trained": true,
-            "Current rest period": "2",
+            "Current rest period": 2,
             "Days till ready": "0"
         },
         "shoulder": {
-            "Is Trained": true,
             "Current rest period": "3",
             "Days till ready": "0"
         },
         "lats": {
-            "Is Trained": true,
             "Current rest period": "3",
             "Days till ready": "0"
         },
         "tricep": {
-            "Is Trained": true,
             "Current rest period": "2",
             "Days till ready": "0"
         },
         "bicep": {
-            "Is Trained": true,
             "Current rest period": "2",
             "Days till ready": "0"
         },
         "chest": {
-            "Is Trained": true,
             "Current rest period": "3",
             "Days till ready": "0"
         },
@@ -82,9 +76,9 @@
                 "bicep",
                 "chest"
             ],
-            "type":"prefer",
-            "type":"ask",
-            "type":
+            "prefer":"", 
+            "type":"",
+            "type":""
             }
         }
     }
