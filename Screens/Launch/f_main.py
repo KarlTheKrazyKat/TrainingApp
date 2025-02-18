@@ -22,4 +22,10 @@ f_main.rowconfigure(1,weight=1)
 #####Visual Elements#####
 #########################
 
-#Element Descriptions
+#Open Button
+vb_open = ttk.Button(f_main, text="VIS Button", command=None)
+vb_open.grid(row=1,column=1,sticky=(N, S, E, W))
+
+#New Button
+vb_new = ttk.Button(f_main, text="VIS Button", command=None)
+vb_new.grid(row=1,column=2,sticky=(N, S, E, W))
