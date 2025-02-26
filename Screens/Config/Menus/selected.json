@@ -1,0 +1,17 @@
+{
+  "trap": false,
+  "shoulder": false,
+  "lats": false,
+  "tricep": false,
+  "bicep": false,
+  "chest": false,
+  "mid_back": false,
+  "core": false,
+  "low_back": false,
+  "glutes": false,
+  "adductor": false,
+  "abductor": false,
+  "hamstring": false,
+  "quadracep": false,
+  "calves": false
+}
