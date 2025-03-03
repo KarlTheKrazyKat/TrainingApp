@@ -1,7 +1,7 @@
 {
   "trap": true,
   "shoulder": true,
-  "lats": false,
+  "lats": true,
   "tricep": true,
   "bicep": true,
   "chest": true,

@@ -33,8 +33,7 @@ root.grid_rowconfigure(1,weight=5)
 
 #Screen Modules
 from modules.Config.m_controls import *
-from modules.Config.m_muscles import _m_muscles
-from modules.Config.m_selector import _m_selector
+from modules.Config.m_selector import _m_selector, _m_muscles
 
 #Handle Arguments
 
@@ -52,12 +51,14 @@ with open("../TrainingApp/Screens/Config/Menus/selected.json","w") as f:
 
 def loop():
     #screen modules run here
-    _m_selector()
-    _m_muscles()
     time.sleep(0.2)
-    1+1
+    for widget in f_muscles.winfo_children():
+        widget.destroy()
+    for widget in f_selector.winfo_children():
+        widget.destroy()
+    time.sleep(0.1)
+_m_selector()
+_m_muscles()
 
 #Update Loop
-while root.winfo_exists:
-    loop()
-    root.update()
+root.mainloop()
